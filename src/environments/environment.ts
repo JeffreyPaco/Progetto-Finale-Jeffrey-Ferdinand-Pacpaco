@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  clienti: "http://epicode.online/epicodebeservice_v2/api/clienti?page=0&size=20&sort=id,ASC",
+  clienti: "http://epicode.online/epicodebeservice_v2/api/clienti?page=0&size=20&sort=id,DESC",
   clientiId: "http://epicode.online/epicodebeservice_v2/api/clienti/"
 };
 

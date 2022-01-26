@@ -27,7 +27,10 @@ export class ClientiTableComponent implements OnInit {
   }
 
   rimuovi(item: Clienti): void {
-    this.service.rimuoviClienti(item).subscribe()
+    this.service.rimuoviClienti(item).subscribe(data => {this.clienti = this.clienti.filter(ele => ele!== item)})
+  }
 
+  update(item:Clienti) {
+    this.router.navigate(['update/'+ item.id]);
   }
 }

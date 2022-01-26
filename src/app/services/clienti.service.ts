@@ -27,8 +27,13 @@ getClientiById(id: number) {
   return this.http.get<Clienti>(environment.clientiId+id, {headers: this.headers})
 }
 
+update(clienti: Clienti) {
+
+  return this.http.put<Clienti>(environment.clientiId+clienti.id, clienti,{headers: this.headers})
+}
+
 rimuoviClienti(clienti: Clienti) {
-  return this.http.delete<Clienti>(environment.clienti, {headers: this.headers})
+  return this.http.delete<Clienti>(environment.clientiId+clienti.id,{headers: this.headers})
 }
 }
 

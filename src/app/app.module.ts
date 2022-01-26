@@ -9,7 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ClientiDettaglioComponent } from './clienti-dettaglio/clienti-dettaglio.component';
-import { AddClienteComponent } from './add-cliente/add-cliente.component';
+import { UpdateClientiComponent } from './update-clienti/update-clienti.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,13 +20,14 @@ import { AddClienteComponent } from './add-cliente/add-cliente.component';
     ClientiTableComponent,
     HomepageComponent,
     ClientiDettaglioComponent,
-    AddClienteComponent,
+    UpdateClientiComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

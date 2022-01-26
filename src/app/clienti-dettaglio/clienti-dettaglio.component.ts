@@ -14,7 +14,7 @@ export class ClientiDettaglioComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private clientiService: ClientiService
+    private clientiService: ClientiService,
 
   ) { }
 
