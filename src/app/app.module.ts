@@ -6,14 +6,20 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ClientiTableComponent } from './clienti-table/clienti-table.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ClientiDettaglioComponent } from './clienti-dettaglio/clienti-dettaglio.component';
+import { AddClienteComponent } from './add-cliente/add-cliente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ClientiTableComponent
+    ClientiTableComponent,
+    HomepageComponent,
+    ClientiDettaglioComponent,
+    AddClienteComponent,
   ],
   imports: [
     BrowserModule,

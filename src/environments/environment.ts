@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  clienti: "http://epicode.online/epicodebeservice_v2/api/clienti?page=0&size=20&sort=id,ASC",
+  clientiId: "http://epicode.online/epicodebeservice_v2/api/clienti/"
 };
 
 /*

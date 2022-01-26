@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Clienti } from '../classes/clienti';
+import { ClientiService } from '../services/clienti.service';
 
 @Component({
   selector: 'app-clienti-table',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientiTableComponent implements OnInit {
 
-  constructor() { }
+  clienti:Clienti[]=[]
+
+  constructor(
+    private service:ClientiService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
+
+    this.service.getAllClienti().subscribe(data => this.clienti = data.content);
   }
 
+  detail(item: Clienti): void {
+  this.router.navigate(['clienti/'+ item.id]);
+  }
+
+  rimuovi(item: Clienti): void {
+    this.service.rimuoviClienti(item).subscribe()
+
+  }
 }
