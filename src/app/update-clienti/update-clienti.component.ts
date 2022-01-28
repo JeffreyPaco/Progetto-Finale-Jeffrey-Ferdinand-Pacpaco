@@ -24,7 +24,7 @@ this.clienti = clienti;})
 }
 
 update(){  
-    this.clientiService.update(this.clienti).subscribe(clienti=>this.clienti=clienti)
-    this.router.navigate(['clienti']);
+    this.clientiService.update(this.clienti).subscribe(clienti=>this.router.navigate(['clienti']))
+    
 }
 }
