@@ -15,7 +15,7 @@ export class Clienti {
     EmailContatto!:string;
     indirizzoSedeOperativa!:IndirizzoSedeOperativa;
     indirizzoSedeLegale!:IndirizzoSedeLegale;
-    dataInserimento!: string;
-    dataUltimoContato!: string;
-    fatturatoAnnuale!: string;   
+    dataInserimento!: number;
+    dataUltimoContatto!: number;
+    fatturatoAnnuale!: number;   
 }

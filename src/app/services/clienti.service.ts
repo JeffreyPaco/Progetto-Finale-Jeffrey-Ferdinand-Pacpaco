@@ -35,5 +35,14 @@ update(clienti: Clienti) {
 rimuoviClienti(clienti: Clienti) {
   return this.http.delete<Clienti>(environment.clientiId+clienti.id,{headers: this.headers})
 }
-}
 
+getTipoClienti() {
+  return this.http.get<string[]>(environment.tipocliente, {headers: this.headers})
+}
+getComune() {
+  return this.http.get<string[]>(environment.comune, {headers: this.headers})
+}
+createClienti(clienti: Clienti) {
+  return this.http.post<Clienti>(environment.clienti, clienti,{headers: this.headers})
+}
+}

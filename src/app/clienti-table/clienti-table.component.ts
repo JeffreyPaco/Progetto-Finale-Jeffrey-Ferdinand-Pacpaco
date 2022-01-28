@@ -33,4 +33,8 @@ export class ClientiTableComponent implements OnInit {
   update(item:Clienti) {
     this.router.navigate(['update/'+ item.id]);
   }
+
+  new(item: Clienti) {
+    
+  }
 }

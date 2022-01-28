@@ -10,8 +10,20 @@
       <h5 class="card-title">Ragione sociale:{{clienti.ragioneSociale}}</h5>
       <h5 class="card-title">Partita Iva:{{clienti.partitaIva}}</h5>
       <h5 class="card-title">Tipo Cliente:{{clienti.tipoCliente}}</h5>
-      <h5 class="card-title">Indirizzo Sede Operativa:{{clienti.indirizzoSedeLegale}}</h5>
-      <h5 class="card-title">Indirizzo Sede Legale:{{clienti.indirizzoSedeLegale}}</h5>
+      <h5 class="card-title">Indirizzo Sede Operativa:
+      <li>via: {{clienti.indirizzoSedeOperativa.via}}</li>
+      <li>civico: {{clienti.indirizzoSedeOperativa.civico}}</li>
+      <li>cap: {{clienti.indirizzoSedeOperativa.cap}}</li>
+      <li>localita: {{clienti.indirizzoSedeOperativa.localita}}</li>
+      <li>comune: {{clienti.indirizzoSedeOperativa.comune.nome}}</li>
+      </h5>
+      <h5 class="card-title">Indirizzo Sede Legale:
+      <li>via: {{clienti.indirizzoSedeLegale.via}}</li>
+      <li>civico: {{clienti.indirizzoSedeLegale.civico}}</li>
+      <li>cap: {{clienti.indirizzoSedeLegale.cap}}</li>
+      <li>localita: {{clienti.indirizzoSedeLegale.localita}}</li>
+      <li>comune: {{clienti.indirizzoSedeLegale.comune.nome}}</li>
+      </h5>
       <h5 class="card-title">Pec:{{clienti.pec}}</h5>
       <h5 class="card-title">Telefono:{{clienti.telefono}}</h5>
       <h5 class="card-title">data inserimento:{{clienti.dataInserimento}}</h5>

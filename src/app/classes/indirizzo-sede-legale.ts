@@ -6,7 +6,7 @@ export class IndirizzoSedeLegale {
     via!:string;
     civico!:string;
     cap!:string;
-    località!:string;
+    localita!:string;
     comune!:Comune;
     provincia!:Provincia
 }

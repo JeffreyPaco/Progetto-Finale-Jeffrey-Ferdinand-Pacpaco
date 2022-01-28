@@ -11,6 +11,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ClientiDettaglioComponent } from './clienti-dettaglio/clienti-dettaglio.component';
 import { UpdateClientiComponent } from './update-clienti/update-clienti.component';
 import { FormsModule } from '@angular/forms';
+import { FattureComponent } from './fatture/fatture.component';
+import { NewClienteComponent } from './new-cliente/new-cliente.component';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +24,8 @@ import { FormsModule } from '@angular/forms';
     HomepageComponent,
     ClientiDettaglioComponent,
     UpdateClientiComponent,
+    FattureComponent,
+    NewClienteComponent,
   ],
   imports: [
     BrowserModule,

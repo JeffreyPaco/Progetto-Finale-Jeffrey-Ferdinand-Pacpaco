@@ -1,0 +1,15 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Ragione Sociale</th>
+        <th scope="col">Anno</th>
+        <th scope="col">Importo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of fatture">
+        <td>{{item.cliente.ragioneSociale}}</td>
+        <td>{{item.anno}}</td>
+        <td>{{item.importo}}</td>
+        <td></td>
+      </tr>

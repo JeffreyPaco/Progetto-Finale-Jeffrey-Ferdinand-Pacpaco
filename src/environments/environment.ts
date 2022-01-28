@@ -5,7 +5,10 @@
 export const environment = {
   production: false,
   clienti: "http://epicode.online/epicodebeservice_v2/api/clienti?page=0&size=20&sort=id,DESC",
-  clientiId: "http://epicode.online/epicodebeservice_v2/api/clienti/"
+  clientiId: "http://epicode.online/epicodebeservice_v2/api/clienti/",
+  tipocliente:"http://epicode.online/epicodebeservice_v2/api/clienti/tipicliente",
+  fatture: "http://epicode.online/epicodebeservice_v2/api/fatture?page=0&size=20&sort=id,ASC",
+  comune:"http://epicode.online/epicodebeservice_v2/api/comuni?page=0&size=20&sort=id,ASC"
 };
 
 /*

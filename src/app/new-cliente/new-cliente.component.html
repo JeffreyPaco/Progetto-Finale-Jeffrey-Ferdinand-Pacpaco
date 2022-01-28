@@ -1,0 +1,50 @@
+<h2>Aggiungi nuovo cliente</h2>
+<form class="my-3">
+    <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" [(ngModel)]="clienti.nomeContatto" name="name" class="form-control" id="nome contatto">
+    </div>
+    <div class="form-group">
+        <label for="name">Cognome</label>
+        <input type="text" [(ngModel)]="clienti.cognomeContatto" name="cognome contatto" class="form-control" id="partitaIva">
+    </div>
+    <div class="form-group">
+        <label for="name">Partia Iva</label>
+        <input type="text" [(ngModel)]="clienti.partitaIva" name="partitaIva" class="form-control" id="partitaIva">
+    </div>
+    <div class="form-group">
+        <label for="name">Ragione Sociale</label>
+        <input type="text" [(ngModel)]="clienti.partitaIva" name="partitaIva" class="form-control" id="partitaIva">
+    </div>
+    <div class="form-group">
+        <label for="text">Tipo Cliente</label>
+     <select [(ngModel)]="clienti.tipoCliente">
+         <option *ngFor="let item of tipoCliente">
+             {{item}}
+         </option>
+     </select>
+    </div>
+    <div class="form-group">
+        <label for="phone">Telefono</label>
+        <input type="text" [(ngModel)]="clienti.telefono" name="phone" class="form-control" id="telefono">
+    </div>
+    <div class="form-group">
+        <label for="email">Pec</label>
+        <input type="text" [(ngModel)]="clienti.pec" name="pec" class="form-control" id="pec">
+    </div>
+    <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" [(ngModel)]="clienti.email" name="email" class="form-control" id="email">
+</div>
+<div class="form-group">
+    <label for="name">Indirizzo Sede Legale</label>
+    <input type="text" [(ngModel)]="clienti.indirizzoSedeLegale" name="indirizzoSedeLegale" class="form-control" id="indirizzoSedeLegale">
+</div>
+<div class="form-group">
+    <label for="name">Indirizzo Sede Operativa</label>
+    <input type="text" [(ngModel)]="clienti.indirizzoSedeOperativa" name="indirizzoSedeOperativa" class="form-control" id="indirizzoSedeOperativa">
+</div>
+    <div class="form-group">
+        <button type="button" class="btn btn-dark form-control" (click)="new()">New</button>
+    </div>
+</form> 
